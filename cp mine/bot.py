@@ -16,7 +16,7 @@ load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_IDS = [int(x.strip()) for x in os.getenv("ADMIN_IDS", "").split(",") if x.strip()]
 CHANNEL_ID = int(os.getenv("CHANNEL_ID"))
-REVIEWS_CHAT_ID = -1003244079264
+REVIEWS_CHAT_ID = 
 
 # Админ получает уведомления о выигрышах
 ADMINS_LIST = ADMIN_IDS  # можно заменить на отдельный чат, если нужно
@@ -203,4 +203,5 @@ async def main():
 
 
 if __name__ == "__main__":
+
     asyncio.run(main())
